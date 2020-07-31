@@ -33,6 +33,7 @@
               firebase.auth().signInWithPopup(base_provider).then(function(result){
                 console.log(result)
                 console.log("success. google account linked")
+                  window.location.replace("https://samchikitsa-mobile.netlify.app/");
               }).catch(function(err){
                 console.log("failed")
               })
